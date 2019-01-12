@@ -1,0 +1,271 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+* {
+  box-sizing: border-box; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  background: #fff; }
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background: yellow; }
+  header .title {
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .title span {
+      width: 30px; }
+    header .title .tab {
+      border: 1px solid #000;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 25px;
+      height: 25px; }
+      header .title .tab span {
+        padding: 8px; }
+        header .title .tab span.active {
+          background: #000;
+          color: yellow; }
+  header .head {
+    margin: 10px 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000; }
+    header .head span {
+      border-right: 1px solid gray;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold; }
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+  section .mui-slider .mui-slider-group .mui-slider-item dl {
+    display: inline-block;
+    width: 24%;
+    text-align: center; }
+    section .mui-slider .mui-slider-group .mui-slider-item dl dt {
+      margin: 5px; }
+      section .mui-slider .mui-slider-group .mui-slider-item dl dt span {
+        padding: 8px;
+        border-radius: 50%;
+        background: #efefef; }
+    section .mui-slider .mui-slider-group .mui-slider-item dl.bg > dt > span {
+      background: yellow; }
+  section .time {
+    padding-left: 10px;
+    margin-top: 10px; }
+
+footer {
+  width: 100%;
+  height: 160px; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc; }
+    footer ul li {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 160px;
+      justify-content: center; }
+      footer ul li span {
+        display: inline-block;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
+      footer ul li:nth-child(4) span {
+        width: 100%;
+        height: 100%;
+        line-height: 160px; }
+
+.mui-dtpicker {
+  bottom: -20px; }

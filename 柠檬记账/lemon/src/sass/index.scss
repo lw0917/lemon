@@ -1,0 +1,270 @@
+@import "common.scss";
+*{
+	box-sizing: border-box;
+	}
+body{
+	background:#fff;
+}
+p{
+	color: #000000;
+}
+.wrap{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	padding-bottom:50px;
+	font-size:14px;
+}
+header{
+	width:100%;
+	height:100px;
+	background:yellow;
+	padding:5px 10px;
+	display: flex;
+	justify-content:space-between;
+	.headLeft{
+		h2{
+			line-height:40px;
+			span{
+				font-size:30px;
+			    font-weight:600;
+			}
+		}
+		p{
+			line-height:25px;
+			font-size:16px;
+			font-weight:600;
+		}
+	}
+	.headRight{
+		  padding:10px 0;
+		  span{
+			  font-size:16px;
+			  font-weight:bold;
+			  padding:4px 10px;
+			  border:1px solid #000;
+			  border-radius:10px;
+			  margin-left:10px;
+		  }
+	}
+}
+.mui-content{
+     flex:1;	
+	 display: flex;
+	 flex-direction: column;
+	 background:#fff;
+	 .title{
+		 width:100%;
+		 height:40px;
+		 display: flex;
+		 justify-content:space-between;
+		 padding:0 10px;
+		 align-items: center;
+		 .tab{
+			 border:1px solid #000;
+			 line-height:30px;
+			 border-radius:10px;
+			 overflow:hidden;
+			 span{
+				 padding:6px 10px;
+				 &.active{
+					 background:yellow;
+				 }
+			 }
+		 }
+		 &>span{
+			 width:30px;
+		 }
+	 }
+	 .conWrap{
+		 flex:1;
+		 .conBill{
+			 position:relative;
+		 }
+		 .conBill,.conTable,.yBill,.mBill{
+			 width:100%;
+			 height:100%;
+		 }
+	 }
+}
+.yBill,.mBill{
+	display:flex;
+	flex-direction: column;
+}
+.mBill{
+	.dayItem{
+		margin-bottom:10px;
+		display:flex;
+		flex-direction: column;
+		.dayTitle{
+			width:100%;
+			height:50px;
+			
+			display:flex;
+			padding:0 10px;
+			justify-content: space-between;
+			align-items: center;
+			color:#666;
+			span{
+				margin:0 5px;
+			}
+		}
+		.mui-table-view-cell{
+			height:50px;
+			.mui-slider-handle{
+				display:flex;
+			    justify-content: space-between;
+				align-items:center;
+				h2{
+					display:flex;
+					line-height:30px;
+					align-items:center;
+					.mui-icon-bars{
+						margin-right:10px;
+					}
+				}
+				.liMoney{
+					font-size:16px;
+					font-weight:bold;
+					line-height:30px;
+				}
+			}
+		}
+	}
+}
+
+.m-title{
+	display:flex;
+	justify-content:space-between;
+	padding-right:30px;
+	align-items: center;
+	li{
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-bottom:10px;
+		span{
+			text-align: center;
+		}
+	}
+	&>li:nth-child(1){
+		display:flex;
+		flex-direction: initial;
+		align-items: center;
+		span{
+			margin-right:10px;
+		}
+	}
+}
+.mui-table-view-cell.mui-collapse.mui-active{
+	margin-top:0px;
+}
+.mui-table-view-cell.mui-collapse .mui-collapse-content{
+	padding:0px;
+	margin-top:0px;
+	ul{
+		margin-top:0;
+		margin-bottom:0px;
+		li{
+			.mui-slider-handle{
+			display:flex;
+			 padding:10px  10px;
+			justify-content: space-between;
+			align-items:center;
+			dl{
+				display:flex;
+				align-items:center;
+				dd{
+					margin-left:10px;
+				}
+			}
+		}
+		}
+		
+	}
+}
+.addBill{
+	position:fixed;
+	left:50%;
+	bottom:40px;
+	width:70px;
+	height:70px;
+	font-size:50px;
+	margin-left:-35px;
+	border-radius:50%;
+	background:#F9F9F9;
+	text-align:center;
+	line-height:70px;
+	z-index:99;
+}
+.mui-off-canvas-left{
+	  background:#fff;
+		font-size:14px;
+		.mui-scroll-wrapper{
+				padding:15px;
+				ul{
+				display:flex;
+				flex-direction: column;
+				li{
+					 h2{
+						 width:100%;
+						 height:40px;
+						 line-height:40px;
+						 font-weight:bold;
+						 font-size:18px;
+						 border-left:1px solid yellow;
+						 padding-left:10px;
+						 margin:10px 0;
+					 }
+					 div{
+						 padding-left:15px;
+						 span{
+							 display:inline-block;
+							 padding:5px 10px;
+							 border:1px solid gray;
+							 border-radius:10px;
+							 margin:10px;
+							 color:gray;
+							 &.spanActive{
+								   color:#fff;
+									 background:yellow;
+									 border-color:yellow;
+							 }
+						 }
+					 }
+				}
+			}
+			.closeAside{
+				 margin:15px auto;
+				 width:120px;
+				 height:40px;
+				 text-align: center;
+				 line-height:40px;
+				 font-size:18px;
+				 background:yellow;
+				 color:#fff;
+				 border-radius:10px;
+			}
+		}
+		  
+	}
+
+
+
+
+.none{
+	display: none;
+}
+.mui-dtpicker{
+	bottom:-20px;
+}
+.red{
+	color:red;
+}
+.green{
+	color:green;
+}
+.gray{
+	color: gray;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.dtpicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.poppicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		
+		<!-- 主界面不动、菜单移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<ul class="classifyList">
+							<li>
+								<h2>收支类型</h2>
+								<div class="typeList">
+									<span class="all">全部收入</span>
+									<span class="all">全部支出</span>
+								</div>
+							</li>
+							<li>
+								<h2>收支分类</h2>
+								<div class="typeClassify">
+									<!-- 渲染分类 -->
+								</div>
+							</li>
+						</ul>
+						<div class="closeAside">
+							  保存
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap wrap">
+				<!-- 主页面标题 -->
+				<header>
+					<!-- 侧边按钮 -->
+					<!--  <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a> -->
+					<div class="headLeft">
+						<p>本<span class="showY">月</span>花费：</p>
+						<h2><span class="num">576867</span>.00</h2>
+						<p>本<span class="showY">月</span>收入：<span class="add">25334</span>.00</p>
+					</div>
+					<div class="headRight">
+						<span class="headDate showY">月</span>
+						<span class="headTime">2018-01</span>
+					</div>
+				</header>
+
+				<!-- 主体 -->
+				<div class="mui-content ">
+					<div class="title">
+						<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left showAside" href="#offCanvasSide"></a>
+						<div class="tab">
+							<span class="active">账单</span>
+							<span>图表</span>
+						</div>
+						<span></span>
+					</div>
+					<div class="conWrap">
+						<div class="conBill">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<!--这里放置真实显示的DOM内容-->
+									<div class="yBill none">
+								  	<!-- 按年显示的账单 -->
+									</div>
+									<div class="mBill">
+										  <!-- 按月显示的账单 -->
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="conTable none">
+							图表
+						</div>
+					</div>
+				</div>
+				<!--  底部 -->
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-phone"></span>
+						<span class="mui-tab-label">电话</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-email"></span>
+						<span class="mui-tab-label">邮件</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">设置</span>
+					</a>
+
+				</nav>
+				<div class="mui-icon mui-icon-plus addBill"></div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/libs/require.js" data-main="./js/page/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+@import "common.scss";
+*{
+	box-sizing: border-box;
+}
+html,body,.wrap{
+	background:#fff;
+}
+.wrap{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	font-size:14px;
+}
+header{
+	width:100%;
+	height:44px;
+	padding:0 10px;
+	background:yellow;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	span{
+		width:30px;
+	}
+	h2{
+		font-size:16px;
+		font-weight:bold;
+	}
+}
+section{
+	flex: 1;
+	display:flex;
+	flex-direction: column;
+	padding:15px;
+	.title{
+		width:100%;
+		height:40px;	
+	    display:flex;
+		align-items:center;
+		margin-bottom:15px;
+		span{
+			width:40px;
+			height:40px;
+			margin-right:15px;
+			background:yellow;
+			text-align:center;
+			line-height:40px;
+			border-radius:50%;
+		}
+		input{
+			text-align:right;
+			flex:1;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+		}
+	}
+	.mui-slider{
+		height:120px;
+		.mui-slider-group{
+			 height:100%;
+			 .mui-slider-item{
+				 dl{
+					 display:inline-block;
+					 width:40px;
+					 height:40px;
+					 margin:10px 25px;
+					 dt{
+						span{
+							display:inline-block;
+							text-align: center;
+							line-height:40px;
+							width:40px;
+							height:100%;
+							background:yellow;
+							border-radius: 50%;
+						}
+					 }
+				 }
+			 }
+		}
+	}
+} 
+
+footer{
+	width:100%;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:0 15px;
+	margin-bottom:15px;
+	span{
+		width:100%;
+		height:100%;
+		border-radius:15px;
+		background:yellow;
+		text-align:center;
+		line-height:50px;
+		font-size:18px;
+		color:#fff;
+	}
+}
