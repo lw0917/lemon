@@ -251,7 +251,18 @@ require(['./js/main.js'], function() {
 			var str = '',
 				numAll = 0,
 				addAll = 0;
-			if (status === 'month') {
+
+	   //一维数组转二维数组,此方法不需要提前对数组进行任何处理
+	//    var map = new Map();
+	//    var newArr = [];
+	//    arr.forEach(function(item,i){
+	// 	   map.has(item.id) ? map.get(item.id).push(item) : map.set(item.id,[item])
+	//    })
+	//    newArr = [...map.values()];
+	   
+	//    console.log(newArr)
+			if (status === 'month') {        
+          //此方法需要对数组先按分组条件进行排序，否则分组将会不正确
 				let newArr = [],
 					tempArr = [];
 				data.push([]);
